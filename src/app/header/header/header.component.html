@@ -1,0 +1,12 @@
+<mat-toolbar class="shadow justify-content-between px-5 mb-4">
+    <div>
+        <span class="mat-h2">TABLEROS</span>
+    </div>
+    <div>
+        <app-dialog (emitText)="addColumn($event)" question="Añadir Nueva Columna">
+            <button mat-raised-button color="primary">
+                Nueva Columna
+            </button>
+        </app-dialog>
+    </div>
+</mat-toolbar>
